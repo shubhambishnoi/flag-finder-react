@@ -45,21 +45,26 @@ export default function App() {
       <input
         placeholder="Paste flag here to identify the country it belongs to"
         style={{
-          width: "40rem",
-          height: "3rem",
+          width: "25em",
+          height: "3em",
           border: "1px solid black",
-          marginTop: "5rem"
+          marginTop: "5em"
         }}
         onChange={flagsInputHandler}
       />
 
       <h2>{meaning}</h2>
-      <h3 style={{ marginTop: "5rem" }}>flags we know</h3>
+      <h3 style={{ marginTop: "5em" }}>flags we know</h3>
       {flagsWeKnow.map(function (flag) {
         return (
           <span
             onClick={() => flagsClickHandler(flag)}
-            style={{ fontSize: "2rem", padding: "1rem", cursor: "pointer" }}
+            style={{
+              fontSize: "2em",
+              padding: "1em",
+              cursor: "pointer",
+              display: "inline-grid"
+            }}
             key={flag}
           >
             {flag}
